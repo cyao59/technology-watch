@@ -1,6 +1,6 @@
 ## Modified files
 
-<Goal of the merge requests>
+- <Goal of the merge requests>
 
 ## Modified files
 
