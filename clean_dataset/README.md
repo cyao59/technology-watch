@@ -1,4 +1,4 @@
-# Dataset Cleanup Script
+# Script 1 : Dataset Cleanup Script
 
 This script is designed to remove all tables from a specified dataset in BigQuery.
 
@@ -60,6 +60,62 @@ This script is designed to remove all tables from a specified dataset in BigQuer
 - Review the script output for any errors or unexpected behavior.
 
 - Adjust permissions and installations as needed.
+
+
+# Script 2: BigQuery Dataset Sizes Retrieval Script
+
+## Overview
+
+This Python script leverages the Google Cloud BigQuery API to retrieve dataset sizes within a specified project. The obtained dataset sizes are then saved to a CSV file with a pipe ('|') as the delimiter.
+
+## Prerequisites
+
+1. **Google Cloud Project:**
+   - Ensure you have a Google Cloud project with the necessary permissions to access BigQuery.
+
+2. **Google Cloud SDK:**
+   - Install the Google Cloud SDK to authenticate and authorize access to the BigQuery API.
+
+3. **Python Libraries:**
+   - Install the required Python libraries using the following:
+     ```bash
+     pip install google-cloud-bigquery
+     ```
+
+## Script Structure
+
+The script is organized into three main functions:
+
+### 1. `get_dataset_sizes(project_id)`
+
+- **Input:**
+  - `project_id`: The Google Cloud project ID containing BigQuery datasets.
+
+- **Output:**
+  - Returns a dictionary (`dataset_sizes`) mapping dataset IDs to their sizes in gigabytes.
+
+### 2. `save_to_csv(dataset_sizes, csv_filename='dataset_sizes.csv')`
+
+- **Input:**
+  - `dataset_sizes`: Dictionary obtained from `get_dataset_sizes`.
+  - `csv_filename`: Name of the CSV file to create (default: 'dataset_sizes.csv').
+
+- **Output:**
+  - Saves dataset sizes to a CSV file using a pipe ('|') as the delimiter.
+
+### 3. `main()`
+
+- **Usage:**
+  - Replace 'your-project-id' with your Google Cloud project ID.
+  - Executes the main functionality of the script.
+
+## Execution
+
+1. Replace `'your-project-id'` in the `main()` function with your actual Google Cloud project ID.
+
+2. Run the script using the following command:
+   ```bash
+   python get_dataset_sizes.py
 
 ## License
 
