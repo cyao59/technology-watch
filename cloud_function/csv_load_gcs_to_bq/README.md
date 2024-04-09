@@ -1,6 +1,3 @@
-# Setting cloud function with cloud storage
-![Setting Cloud Function](https://github.com/cyao59/technology-watch/blob/main/cloud_function/gcs_to_bQ/setting_cloud_function.png)
-
 # Cloud Function for Loading CSV Files from Google Cloud Storage to BigQuery
 This Cloud Function is designed to automate the process of loading CSV files from Google Cloud Storage (GCS) into BigQuery. It utilizes the Google Cloud Python client libraries for BigQuery and Cloud Storage.
 
@@ -11,6 +8,7 @@ The Cloud Function gcs_to_bq is triggered by events in a specified GCS bucket. W
 google-cloud-bigquery: Python client library for BigQuery.
 google-cloud-storage: Python client library for Cloud Storage.
 pandas: Python library for data manipulation and analysis.
+
 # Configuration
 Before deploying the Cloud Function, ensure the following configurations:
 
@@ -23,6 +21,9 @@ Deploy the Cloud Function using the Google Cloud Console, Cloud SDK, or Cloud De
 
 # Usage
 After deployment, any CSV files uploaded to the specified Cloud Storage bucket will trigger the Cloud Function, which will then load the data into the corresponding BigQuery table.
+
+# Setting cloud function with cloud storage
+![Setting Cloud Function](https://github.com/cyao59/technology-watch/blob/main/cloud_function/gcs_to_bQ/setting_cloud_function.png)
 
 # Contributing
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
