@@ -23,7 +23,7 @@ Deploy the Cloud Function using the Google Cloud Console, Cloud SDK, or Cloud De
 After deployment, any CSV files uploaded to the specified Cloud Storage bucket will trigger the Cloud Function, which will then load the data into the corresponding BigQuery table.
 
 # Setting cloud function with cloud storage
-![Setting Cloud Function](https://github.com/cyao59/technology-watch/blob/main/cloud_function/gcs_to_bQ/setting_cloud_function.png)
+![Setting Cloud Function](https://github.com/cyao59/technology-watch/blob/8561d25afae5d4196538048fc054c5aaaae84d28/cloud_function/csv_load_gcs_to_bq/setting_cloud_function.png)
 
 # Contributing
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
