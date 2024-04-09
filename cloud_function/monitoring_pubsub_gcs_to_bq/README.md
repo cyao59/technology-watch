@@ -1,17 +1,17 @@
 # Cloud Function for Data Quality Check Triggered by Cloud Scheduler and Pub/Sub
 This Cloud Function is designed to perform data quality checks triggered by messages on a Cloud Pub/Sub topic. It utilizes Google Cloud Scheduler to publish messages to the Pub/Sub topic at specified intervals.
 
-# Overview
+## Overview
 The Cloud Function data_quality_check is triggered by messages on a specified Cloud Pub/Sub topic. When a message is received, the function decodes the message payload, retrieves SQL queries stored in a Google Cloud Storage bucket, performs data quality checks using these queries, and inserts the results into a monitoring table in BigQuery.
 
-# Dependencies
+## Dependencies
 - google-cloud-pubsub: Python client library for Pub/Sub.
 - google-cloud-storage: Python client library for Cloud Storage.
 - google-cloud-bigquery: Python client library for BigQuery.
 - variables.py: Python module containing project variables.
 - functions.py: Python module containing helper functions.
 
-# Configuration
+## Configuration
 Before deploying the Cloud Function, ensure the following configurations:
 
 Cloud Scheduler: Configure Cloud Scheduler to publish messages to the Cloud Pub/Sub topic at the desired intervals.
@@ -21,17 +21,17 @@ Functions: Implement the functions in functions.py for listing SQL queries from 
 Deployment
 Deploy the Cloud Function using the Google Cloud Console, Cloud SDK, or Cloud Deployment Manager. Associate the Cloud Function with the Pub/Sub topic for triggering.
 
-# Usage
+## Usage
 After deployment, Cloud Scheduler will publish messages to the Pub/Sub topic at specified intervals, triggering the Cloud Function. The function will then perform data quality checks using SQL queries stored in the Cloud Storage bucket and insert the results into the monitoring table in BigQuery.
 
 ##  Setting cloud scheduler
 - ![Setting cloud scheduler](https://github.com/cyao59/technology-watch/blob/main/cloud_function/monitoring_pubsub_gcs_to_bq/setting_cloud_scheduler.png)
 
 ## Setting cloud function with cloud scheduler and pub sub
-- ![Setting cloud function with cloud scheduler and pub sub](https://github.com/cyao59/technology-watch/blob/main/cloud_function/gcs_to_bQ/setting_cloud_function.png)
+- ![Setting cloud function with cloud scheduler and pub sub](https://github.com/cyao59/technology-watch/blob/e64cd196fa4db85a4349fe99f9b70d4053d08cd3/cloud_function/monitoring_pubsub_gcs_to_bq/setting_monitoring_gcs_to_bq.png)
 
 
-# Contributing
+## Contributing
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 Feel free to customize this README further based on your specific requirements or add additional sections as needed.
