@@ -5,9 +5,9 @@
 - Clique droit + reset current branch + hard
 - Git push
 
-———————————————
-Merge commit into 1
-———————————————
+
+## Merge commit into 1
+
 ##### 1°) Delete unecessary commit form history
 git reset --soft HEAD~2
 git commit —amend
@@ -20,8 +20,3 @@ Git push
 # Exclure un dossier qu’on ne veut pas push
 Exclure des fichiers
 vim .git/info/exclude
-
-
-
-
-
