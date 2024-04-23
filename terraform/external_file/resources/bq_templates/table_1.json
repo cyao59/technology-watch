@@ -1,0 +1,12 @@
+[
+    {
+      "name": "nom",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "prenoms",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    }
+]

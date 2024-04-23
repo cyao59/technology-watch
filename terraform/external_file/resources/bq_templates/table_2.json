@@ -1,0 +1,12 @@
+[
+    {
+      "name": "metier",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "date_embauche",
+      "type": "DATE",
+      "mode": "NULLABLE"
+    }
+]
